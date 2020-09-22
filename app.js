@@ -6,8 +6,8 @@ let palabras = {
     'mesa':'mayonesa',
     'poso':'persoso',
     'misa':'camisa',
-    'moza':'hermoza',
-    'musa':'iluza',
+    'posa':'perezosa',
+    'musa':'pelusa',
     'masa':'amenaza',
     'piso':'petiso',
     'pose':'desglose',
@@ -21,7 +21,13 @@ let list = Object.keys(palabras).sort(()=>{
     return Math.random()-.5
 }).sort(()=>{
     return Math.random()-.5
+}).sort(()=>{
+    return Math.random()-.5
+}).sort(()=>{
+    return Math.random()-.5
 })
+
+
 let index = null
 let setTitle = () =>{
     if(list.length==0){
@@ -35,7 +41,7 @@ let setTitle = () =>{
 
 setTitle()
 let choice = (e) =>{
-    if(palabras[index]===e.target.innerText){
+    if(palabras[index].toLowerCase()===e.target.innerText.toLowerCase()){
         localStorage.setItem('palabra', index)
         document.querySelector('div').innerText = palabras[index]
         clearInterval(interval)

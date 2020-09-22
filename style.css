@@ -32,6 +32,13 @@ body > p{
 a{
     color: goldenrod;
 }
+a:hover{
+    color: goldenrod;
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px yellow;
+}
 .hide{
     display: none !important;
 }
@@ -54,11 +61,17 @@ ul{
     border-bottom: 2px solid red;
     border-right: 2px solid red;
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 ul > li{
     padding: 5px;
     border-top: 2px solid red;
     border-left: 2px solid red;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
 }
 ul > li:hover{
     background-color: goldenrod;
@@ -69,5 +82,15 @@ ul > li:hover{
     body{
         background-color: black;
         color: white;
+    }
+    ul{
+        flex-flow: column;
+    }
+    ul > li{
+        padding: 5px;
+        border-top: 2px solid red;
+        border-left: 2px solid red;
+        width: 100%;
+        text-align: center;
     }
 } 
