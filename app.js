@@ -4,7 +4,7 @@ let time = (value=='')?10:5
 
 let palabras = {
     'mesa':'mayonesa',
-    'poso':'persoso',
+    'poso':'mimoso',
     'misa':'camisa',
     'posa':'perezosa',
     'musa':'pelusa',
@@ -12,7 +12,9 @@ let palabras = {
     'piso':'petiso',
     'pose':'desglose',
 }
-
+if(value==''){
+    localStorage.removeItem('palabra') 
+}
 if(localStorage.getItem('palabra')){
     delete palabras[localStorage.getItem('palabra')]
 }

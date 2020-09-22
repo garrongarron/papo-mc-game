@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     outline: none;
+    user-select: none; 
 }
 body{
     background-color: black;
@@ -31,6 +32,7 @@ body > p{
 }
 a{
     color: goldenrod;
+    user-select: none; 
 }
 a:hover{
     color: goldenrod;
@@ -58,8 +60,8 @@ section{
 ul{
     position: absolute;
     top: 0;
-    border-bottom: 2px solid red;
-    border-right: 2px solid red;
+    /* border-bottom: 2px solid red;
+    border-right: 2px solid red; */
     cursor: pointer;
     display: flex;
     justify-content: space-around;
@@ -67,8 +69,8 @@ ul{
 }
 ul > li{
     padding: 5px;
-    border-top: 2px solid red;
-    border-left: 2px solid red;
+    /* border-top: 2px solid red;
+    border-left: 2px solid red; */
     width: 100%;
     text-align: center;
     text-transform: capitalize;
@@ -88,8 +90,8 @@ ul > li:hover{
     }
     ul > li{
         padding: 5px;
-        border-top: 2px solid red;
-        border-left: 2px solid red;
+        /* border-top: 2px solid red;
+        border-left: 2px solid red; */
         width: 100%;
         text-align: center;
     }
