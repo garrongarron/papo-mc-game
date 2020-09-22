@@ -48,6 +48,22 @@ section{
     top: 60vh;
 }
 
+ul{
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    cursor: pointer;
+}
+ul > li{
+    padding: 5px;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+}
+ul > li:hover{
+    background-color: goldenrod;
+}
+
 /*Mobile*/
 @media (max-width: 700px) { 
     body{
