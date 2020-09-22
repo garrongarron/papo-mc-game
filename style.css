@@ -59,7 +59,7 @@ section{
 
 ul{
     position: absolute;
-    top: 0;
+    top: 75vh;
     /* border-bottom: 2px solid red;
     border-right: 2px solid red; */
     cursor: pointer;
@@ -87,7 +87,9 @@ ul > li:hover{
     }
     ul{
         flex-flow: column;
+        top: 5vh;
     }
+
     ul > li{
         padding: 5px;
         /* border-top: 2px solid red;
