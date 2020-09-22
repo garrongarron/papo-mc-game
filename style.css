@@ -32,7 +32,9 @@ body > p{
 a{
     color: goldenrod;
 }
-
+.hide{
+    display: none !important;
+}
 
 div{
     text-align: center;
