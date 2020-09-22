@@ -21,7 +21,7 @@ h1{
 h1>small{
     color: red;
 }
-p{
+body > p{
     color: white;
     position: absolute;
     bottom: 25vh;
@@ -33,6 +33,11 @@ a{
     color: goldenrod;
 }
 
+
+div{
+    text-align: center;
+    margin-top: 48vh;
+}
 /*Mobile*/
 @media (max-width: 700px) { 
     body{
