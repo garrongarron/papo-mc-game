@@ -96,3 +96,12 @@ ul > li:hover{
         text-align: center;
     }
 } 
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: gray;
+}
+span{
+    color: teal;
+}
